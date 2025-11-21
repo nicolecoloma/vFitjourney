@@ -1,0 +1,18 @@
+data class UserProfile(
+val id: String,
+var name: String,
+var age: Int,
+var heightCm: Int,
+var weightKg: Float,
+var goalWeeklyMinutes: Int
+)
+
+
+data class WorkoutEntry(
+val id: String,
+val userId: String,
+val type: String, // e.g., "Running"
+val durationMinutes: Int,
+val calories: Int,
+val timestamp: Long
+)
